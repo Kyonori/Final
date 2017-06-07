@@ -1,0 +1,45 @@
+<HTML>
+<!--#Foundation Page for building our Javascript programs#-->
+<HEAD>
+<TITLE>The Foundation Page </TITLE>
+<!--fixed this-->
+<SCRIPT type="text/javascript">
+    function leaderboard()
+    {
+
+            var n, temp;
+            ok=false;
+            var score 
+            var rank
+
+            var score = 150
+
+            var leaderboardarray = new Array(5);
+                leaderboardarray[0] = 50;
+                leaderboardarray[1] = 60;
+                leaderboardarray[2] = 180;
+                leaderboardarray[3] = 120;
+                leaderboardarray[4] = score;
+
+            leaderboardarray.sort(function(a, b){return b-a});
+            var myContent = '';
+            for (var n=0;n<5;n++) 
+                myContent += leaderboardarray[n] + "<br>";
+
+            document.getElementById("leaderBoard").innerHTML = myContent;
+    }
+
+    //call the function here
+
+
+</SCRIPT>
+</HEAD>
+<!--#Using CSS#-->
+<BODY style="background-color:#FFF;">
+        <H2>The Foundation Page </H2>
+        <HR>
+        <!--#This is a placeholder#-->
+        <div id="leaderBoard"><script type="text/javascript">leaderboard();</script></div>
+
+</BODY>
+</HTML
